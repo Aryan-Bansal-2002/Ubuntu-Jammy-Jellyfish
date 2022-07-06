@@ -1,0 +1,14 @@
+game:
+  args: -opengl -SkipBuildPatchPrereq -com.epicgames.launcher://apps/602eb4abc8764c87b7f2607a1ef8c18e?action=launch
+  exe: drive_c/Program Files (x86)/Epic Games/Launcher/Portal/Binaries/Win32/EpicGamesLauncher.exe
+  prefix: /home/aryan/Games/epic-games-store
+system:
+  env:
+    DXVK_HUD: compiler
+    MESA_GL_VERSION_OVERRIDE: 4.4COMPAT
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /home/aryan/Games/epic-games-store
+wine:
+  dxvk: true
+  esync: true
+  version: lutris-fshack-7.2-x86_64

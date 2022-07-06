@@ -1,0 +1,72 @@
+# Zathura configuration file
+# See man `man zathurarc'
+
+set selection-clipboard clipboard
+
+# Open document in full-page mode by default
+set adjust-open                     "width"
+set window-height                   3000
+
+# One page per row by default
+set pages-per-row                   1
+
+#stop at page boundries
+set scroll-page-aware               "true"
+set smooth-scroll                   "true"
+set scroll-full-overlap             0.01
+
+#zoom settings
+set zoom-min                        10
+set guioptions                      "shv"
+
+# zathurarc-dark
+
+set font                            "inconsolata 10"
+set default-bg                      "#2f2f2f"   #dark-gray
+set default-fg                      "#ffffff"   #white
+
+set statusbar-bg                    "#202020"   #black
+set statusbar-fg                    "#00ff70"   #green
+
+set inputbar-bg                     "#2f2f2f"   #dark-gray
+set inputbar-fg                     "#00ff70"   #green
+
+set notification-error-bg           "#AC4142"   #dark-red
+set notification-error-fg           "#000000"   #black
+
+set notification-warning-bg         "#202020"   #black
+set notification-warning-fg         "#ff006d"   #red
+
+set highlight-color                 "#00ff70"   #gree
+set highlight-active-color          "#00b4ff"   #blue
+
+set completion-highlight-fg         "#00ff70"   #gree
+set completion-highlight-bg         "#202020"   #black
+
+set completion-bg                   "#00ff70"   #green
+set completion-fg                   "#202020"   #black
+
+set notification-bg                 "#202020"   #black
+set notification-fg                 "#00b4ff"   #blue
+
+set recolor                         "true"
+set recolor-lightcolor              "#2f2f2f"   #dark-gray
+set recolor-darkcolor               "#ffffff"   #white
+set recolor-reverse-video           "true"
+set recolor-keephue                 "true"
+
+
+set index-bg                        "#2f2f2f"    #dark-gray
+set index-fg                        "#ffffff"    #white
+set index-active-bg                 "#ff006d"    #red
+set index-active-fg                 "#2f2f2f"    #dark-gray
+
+
+set render-loading                  "false"
+set scroll-step                     20
+set scroll-hstep                    10
+set zoom-step                       2
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+set sandbox                         none
